@@ -8,7 +8,9 @@
   "repository": "https://github.com/saberespoder/sep-guidelines",
   "scripts": {
     "build-js": "browserify src/index.js -o build/index.js",
-    "build-css": "lessc --clean-css='--s1 --advanced --compatibility=ie8' src/index.less build/index.css --include-path=node_modules"
+    "build-css": "lessc --clean-css='--s1 --advanced --compatibility=ie8' src/index.less build/index.css --include-path=node_modules",
+    "build": "npm run build-js & npm run build-css",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
