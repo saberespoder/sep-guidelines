@@ -1,0 +1,11 @@
+{
+  "name": "sep-guidelines",
+  "version": "1.0.0",
+  "description": "Bootstrap based guidelines package",
+  "main": "index.js",
+  "author": "Alex Timofeev",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
