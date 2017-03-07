@@ -7,10 +7,13 @@
   "license": "ISC",
   "repository": "https://github.com/saberespoder/sep-guidelines",
   "scripts": {
-    "build": "browserify src/index.js -o build/index.js"
+    "build-js": "browserify src/index.js -o build/index.js",
+    "build-css": "lessc --clean-css='--s1 --advanced --compatibility=ie8' src/index.less build/index.css --include-path=node_modules"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "browserify": "^14.1.0"
+    "browserify": "^14.1.0",
+    "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1"
   }
 }
