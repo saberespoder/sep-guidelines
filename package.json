@@ -2,10 +2,15 @@
   "name": "sep-guidelines",
   "version": "1.0.0",
   "description": "Bootstrap based guidelines package",
-  "main": "index.js",
+  "main": "./build/index.js",
   "author": "Alex Timofeev",
   "license": "ISC",
+  "repository": "https://github.com/saberespoder/sep-guidelines",
+  "scripts": {
+    "build": "browserify src/index.js -o build/index.js"
+  },
   "devDependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "browserify": "^14.1.0"
   }
 }
