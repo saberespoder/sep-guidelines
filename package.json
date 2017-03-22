@@ -2,13 +2,13 @@
   "name": "sep-guidelines",
   "version": "1.0.0",
   "description": "Bootstrap based guidelines package",
-  "main": "./build/index.js",
+  "main": "./dist/index.js",
   "author": "Alex Timofeev",
   "license": "ISC",
   "repository": "https://github.com/saberespoder/sep-guidelines",
   "scripts": {
-    "build-js": "browserify src/index.js -o build/index.js",
-    "build-css": "lessc --clean-css='--s1 --advanced --compatibility=ie8' src/index.less build/index.css --include-path=node_modules",
+    "build-js": "browserify src/index.js -o dist/index.js",
+    "build-css": "lessc --clean-css='--s1 --advanced --compatibility=ie8' src/index.less dist/index.css --include-path=node_modules",
     "build": "npm run build-js & npm run build-css",
     "prepublish": "npm run build"
   },
