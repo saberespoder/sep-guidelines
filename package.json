@@ -1,6 +1,6 @@
 {
   "name": "sep-guidelines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bootstrap based guidelines package",
   "main": "dist/sep-guidelines.js",
   "style": "dist/sep-guidelines.css",
