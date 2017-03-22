@@ -4,7 +4,7 @@ This package based on UX/UI guidelines for Saberespoder services. The main found
 
 ## Rebuild package
 
-In the most cases we would need to include built files from the `sep-guidelines/build` directory. Basically, there are two approaches to get files updated there:
+In the most cases we would need to include built files from the `sep-guidelines/dist` directory. Basically, there are two approaches to get files updated there:
 
 1. Say `npm run build`
 2. Run package publishing by `npm publish ./` This command will publish npm package on [npmjs.com](https://www.npmjs.com/package/sep-guidelines) and consequently prebuild assets (thanks to *prepublish* section in [package.json](package.json))
@@ -16,11 +16,11 @@ Since we intended to use this package mostly in our Ruby-based projects the easi
 **Stylesheets**
 
 ```sass
-@import "sep-guidelines/build/index";
+@import "sep-guidelines/dist/sep-guidelines";
 ```
 
 **JavaScripts**
 
 ```javascript
-//= require "sep-guidelines/build/index"
+//= require "sep-guidelines/dist/sep-guidelines"
 ```
